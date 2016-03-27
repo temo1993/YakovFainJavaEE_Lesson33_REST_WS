@@ -19,7 +19,7 @@ public class JavaToJSONObject {
             Product prd1 = new Product(777, "Chanel Handbag", 1000.00);
 
             try (OutputStream fos = new FileOutputStream("product_from_object.json");
-                 JsonWriter jsonWriter = Json.createWriter(fos);) {
+                 JsonWriter jsonWriter = Json.createWriter(fos)) {
 
                 JsonObjectBuilder prdBuilder = Json.createObjectBuilder();
 
