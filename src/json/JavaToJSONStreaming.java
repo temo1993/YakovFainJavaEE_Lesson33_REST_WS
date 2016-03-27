@@ -14,7 +14,7 @@ public class JavaToJSONStreaming {
      Product prd1 = new Product(777, "Gucci Handbag", 1000.00);
 
      try (OutputStream fos = new FileOutputStream("product_from_stream.json");
-          JsonGenerator jsonGenerator = Json.createGenerator(fos);) {
+          JsonGenerator jsonGenerator = Json.createGenerator(fos)) {
 
          jsonGenerator.writeStartObject(); // {
          jsonGenerator.write("id", prd1.id);
